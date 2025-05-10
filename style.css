@@ -1,0 +1,200 @@
+@font-face {
+    src: url(Franklin\ Normal\ 600.ttf);
+    font-family: franklin;
+}
+
+@font-face {
+    src: url(Karnak\ Small\ Normal\ 400.ttf);
+    font-family: karnak;
+}
+
+body {
+    overflow: hidden;
+}
+
+.game {
+    display: flex;
+    width: 280px;
+    height: 335px;
+    flex-direction: column;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    cursor: default;
+    user-select: none;
+}
+
+.thumbnail {
+    height: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #E3E3E1;
+    border-radius: 10px 10px 0 0;
+}
+
+.gameIcon {
+    width: 65px;
+}
+
+.gameText {
+    height: 41px;
+}
+
+.gameData {
+    display: none;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    font-family: franklin;
+}
+
+.play {
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+button {
+    width: 100%;
+    height: 42px;
+    border-radius: 500px;
+    border: 1px solid #DCDCDC;
+    background-color: white;
+    color: black;
+    font-family: franklin;
+    font-size: 17px;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.gameInfo {
+    padding: 0 5px;
+    margin: 0;
+    font-family: franklin;
+    font-size: 15px;
+    text-align: center;
+    color: #B3B3B3;
+}
+
+#games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 25px;
+}
+
+#window {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;   
+}
+
+#greeting {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #eb5872;
+    display: none;
+}
+
+h1 {
+    font-family: franklin;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+
+.confetti {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+}
+
+@keyframes confetti1 {
+  from {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 1;
+    bottom: 60%;
+  }
+  
+  80% {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+@keyframes confetti2 {
+  from {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 1;
+    bottom: 70%;
+  }
+  
+  80% {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+@keyframes confetti3 {
+  from {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 1;
+    bottom: 50%;
+  }
+  
+  80% {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
+@keyframes confetti4 {
+  from {
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 1;
+    bottom: 55%;
+  }
+  
+  80% {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 0;
+  }
+}
